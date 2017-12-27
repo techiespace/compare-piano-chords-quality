@@ -2,37 +2,56 @@
 <html>
 <head>
 	<title>Compare Piano Chords Quality</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" src="main.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<input type="submit" id="button" value="submit"/>
-<br>
-<select id="chord1">
-    <option value="C">C Major</option>
-    <option value="Cm">C minor</option>
-    <option value="CM7">C Major 7th</option>
-    <option value="Cm7">C minor 7th</option>
-    <option value="C7">C Dominant Seventh</option>
-    <option value="C6">C Major Sixth</option>
-    <option value="Cm6">C Minor Sixth</option>
-    <option value="Csus4">C Suspended Fourth</option>
-    <option value="C9">C Ninth</option>
-    <option value="Cdim">C Diminished</option>
-    <option value="Caug">C Augmented</option>
-</select>
-<select id="chord2">
-    <option value="C">C Major</option>
-    <option value="Cm">C minor</option>
-    <option value="CM7">C Major 7th</option>
-    <option value="Cm7">C minor 7th</option>
-    <option value="C7">C Dominant Seventh</option>
-    <option value="C6">C Major Sixth</option>
-    <option value="Cm6">C Minor Sixth</option>
-    <option value="Csus4">C Suspended Fourth</option>
-    <option value="C9">C Ninth</option>
-    <option value="Cdim">C Diminished</option>
-    <option value="Caug">C Augmented</option>
-</select>
+<!-- Checkkout the sample at https://semantic-ui.com/modules/dropdown.html #TODO
+ -->
+ <style type="text/css">
+ 	select{
+ 		
+ 	}
+ </style>
+<div class="container">
+	<h1 style="text-align: center;">Compare Chord Quality - Ear Training</h1>
+	<br>
+	<div class="row">
+		<div style="margin-bottom: 20px;" class="col-md-6">
+			<select class="form-control" id="chord1">
+			    <option value="C">C Major</option>
+			    <option value="Cm">C minor</option>
+			    <option value="CM7">C Major 7th</option>
+			    <option value="Cm7">C minor 7th</option>
+			    <option value="C7">C Dominant Seventh</option>
+			    <option value="C6">C Major Sixth</option>
+			    <option value="Cm6">C Minor Sixth</option>
+			    <option value="Csus4">C Suspended Fourth</option>
+			    <option value="C9">C Ninth</option>
+			    <option value="Cdim">C Diminished</option>
+			    <option value="Caug">C Augmented</option>
+			</select>
+		</div>
+		<div class="col-md-6">
+			<select class="form-control" id="chord2">
+			    <option value="C">C Major</option>
+			    <option value="Cm">C minor</option>
+			    <option value="CM7">C Major 7th</option>
+			    <option value="Cm7">C minor 7th</option>
+			    <option value="C7">C Dominant Seventh</option>
+			    <option value="C6">C Major Sixth</option>
+			    <option value="Cm6">C Minor Sixth</option>
+			    <option value="Csus4">C Suspended Fourth</option>
+			    <option value="C9">C Ninth</option>
+			    <option value="Cdim">C Diminished</option>
+			    <option value="Caug">C Augmented</option>
+			</select>
+		</div>
+	</div>
+		<br>
+		<button style="width:50%; margin:0 auto; display:block;" class="btn btn-primary" id="button">Play</button>
+</div>
+
 </body>
 </html>
