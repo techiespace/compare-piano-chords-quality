@@ -36,47 +36,50 @@ function playChords() {
 		var audio = new Audio("audio/C/Augmented.mp3");
 		audio.play();
 	}
-
+	flag = 0;
 	audio.addEventListener("loadedmetadata", function(_event) {
-    var delayInMilliseconds = (audio.duration+1)*1000;
+	if(flag == 1)
+		return;
+	var delayInMilliseconds = audio.duration*1000;
 	console.log(delayInMilliseconds);
 	
 	setTimeout(function() {
 	var c2 = document.getElementById("chord2").value;
 	if (c2 == "C") {
-		var audio = new Audio("audio/C/Major.mp3");
+		audio.src="audio/C/Major.mp3";
 		audio.play();
 	} else if (c2 == "Cm") {
-		var audio = new Audio("audio/C/Minor.mp3");
+		audio.src="audio/C/Minor.mp3";
 		audio.play();
 	} else if (c2 == "CM7") {
-		var audio = new Audio("audio/C/Major-Seventh.mp3");
+		audio.src="audio/C/Major-Seventh.mp3";
 		audio.play();
 	} else if (c2 == "Cm7") {
-		var audio = new Audio("audio/C/Minor-Seventh.mp3");
+		audio.src="audio/C/Minor-Seventh.mp3";
 		audio.play();
 	} else if (c2 == "C7") {
-		var audio = new Audio("audio/C/Dominant-Seventh.mp3");
+		audio.src="audio/C/Dominant-Seventh.mp3";
 		audio.play();
 	} else if (c2 == "C6") {
-		var audio = new Audio("audio/C/Major-Sixth.mp3");
+		audio.src="audio/C/Major-Sixth.mp3";
 		audio.play();
 	} else if (c2 == "Cm6") {
-		var audio = new Audio("audio/C/Minor-Sixth.mp3");
+		audio.src="audio/C/Minor-Sixth.mp3";
 		audio.play();
 	} else if (c2 == "Csus4") {
-		var audio = new Audio("audio/C/Suspended-Fourth.mp3");
+		audio.src="audio/C/Suspended-Fourth.mp3";
 		audio.play();
 	} else if (c2 == "C9") {
-		var audio = new Audio("audio/C/Ninth.mp3");
+		audio.src="audio/C/Ninth.mp3";
 		audio.play();
 	} else if (c2 == "Cdim") {
-		var audio = new Audio("audio/C/Diminished.mp3");
+		audio.src="audio/C/Diminished.mp3";
 		audio.play();
 	} else if (c2 == "Caug") {
-		var audio = new Audio("audio/C/Augmented.mp3");
+		audio.src="audio/C/Augmented.mp3";
 		audio.play();
 	}
+	flag = 1;
 	}, delayInMilliseconds);
 
 	});
