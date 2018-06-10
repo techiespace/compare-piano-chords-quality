@@ -80,7 +80,7 @@ function playChords() {
 		audio.play();
 	}
 	flag = 1;
-	}, delayInMilliseconds);
+	}, delayInMilliseconds-800);
 
 	});
 	
